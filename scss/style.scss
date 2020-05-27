@@ -7,6 +7,13 @@
 // Bootstrap
 @import './bootstrap/bootstrap.scss';
 
-section{
-    min-height: 100vh;
+// Landing page
+@import './landing';
+
+// Layouts
+@import './header';
+@import './footer';
+
+main{
+    overflow-x: hidden;
 }

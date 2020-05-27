@@ -11,171 +11,317 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
     <link rel="stylesheet" href="./assets/css/style.min.css">
 
-    <title>Hello, world!</title>
+    <title>VERTICE</title>
 </head>
 
-<body data-spy="scroll" data-target="#navbarSupportedContent">
+<body id="landingPage" data-spy="scroll" data-target="#navbarSupportedContent">
     <header class="fixed-top">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
             <div class="container">
-                <a class="navbar-brand d-lg-none" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <a class="navbar-brand d-lg-none" href="#">
+                    <img src="./assets/img/logo.png" alt="Vertice Boutique" class="img-fluid">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse justify-content-lg-center" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav justify-content-lg-around text-center w-100">
                         <li class="nav-item">
-                            <a class="nav-link" href="#sec1">Sec 1</a>
+                            <a class="nav-link" href="#landingPage" data-scroll>Home</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Sec
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown">
+                                Labels
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#sec3">Sec 3</a>
-                                <a class="dropdown-item" href="#sec4">Sec 4</a>
-                                <a class="dropdown-item" href="#sec5">Sec 5</a>
+                                <a class="dropdown-item" href="#labels-1" data-scroll>Labels 1</a>
+                                <a class="dropdown-item" href="#labels-2" data-scroll>Labels 2</a>
+                                <a class="dropdown-item" href="#labels-2" data-scroll>Labels 3</a>
                             </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/">Home</a>
+                        <li class="nav-item d-none d-lg-block">
+                            <a class="nav-link p-0" href="/">
+                                <img src="./assets/img/logo.png" alt="Vertice Boutique">
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#sec2">Sec 2</a>
+                            <a class="nav-link" href="#about" data-scroll>About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#sec6">Sec 6</a>
+                            <a class="nav-link" href="#contact" data-scroll>Contact Us</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <main class="text-center">
-        <section id="sec1">
-            <div class="container">
-                <h2>Section 1</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia deserunt iste aliquid a minima
-                    fugit ipsam! Magnam maxime dolorum corporis officiis, molestias quod unde quaerat, et eveniet ea sit
-                    suscipit.</p>
+    <main>
+
+        <!-- Banner -->
+        <section id="banner">
+            <div class="banner">
+                <div class="banner-item">
+                    <img src="https://picsum.photos/300/400/?image=3" alt="" class="w-100">
+                    <div class="banner-caption text-light">
+                        <h5 class="banner-title">Brand xxx</h5>
+                        <p class="banner-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo unde
+                            cupiditate doloribus architecto delectus recusandae, assumenda adipisci alias provident
+                            blanditiis neque molestias aliquid aut quidem reprehenderit autem nobis iusto illo.</p>
+                    </div>
+                </div>
+                <div class="banner-item">
+                    <img src="https://picsum.photos/300/400/?image=3" alt="" class="w-100">
+                    <div class="banner-caption text-light">
+                        <h5 class="banner-title">Brand xxx</h5>
+                        <p class="banner-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo unde
+                            cupiditate doloribus architecto delectus recusandae, assumenda adipisci alias provident
+                            blanditiis neque molestias aliquid aut quidem reprehenderit autem nobis iusto illo.</p>
+                    </div>
+                </div>
+                <div class="banner-item">
+                    <img src="https://picsum.photos/300/400/?image=3" alt="" class="w-100">
+                    <div class="banner-caption text-light">
+                        <h5 class="banner-title">Brand xxx</h5>
+                        <p class="banner-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo unde
+                            cupiditate doloribus architecto delectus recusandae, assumenda adipisci alias provident
+                            blanditiis neque molestias aliquid aut quidem reprehenderit autem nobis iusto illo.</p>
+                    </div>
+                </div>
+                <div class="banner-item">
+                    <img src="https://picsum.photos/300/400/?image=3" alt="" class="w-100">
+                    <div class="banner-caption text-light">
+                        <h5 class="banner-title">Brand xxx</h5>
+                        <p class="banner-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo unde
+                            cupiditate doloribus architecto delectus recusandae, assumenda adipisci alias provident
+                            blanditiis neque molestias aliquid aut quidem reprehenderit autem nobis iusto illo.</p>
+                    </div>
+                </div>
+                <div class="banner-item">
+                    <img src="https://picsum.photos/300/400/?image=3" alt="" class="w-100">
+                    <div class="banner-caption text-light">
+                        <h5 class="banner-title">Brand xxx</h5>
+                        <p class="banner-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo unde
+                            cupiditate doloribus architecto delectus recusandae, assumenda adipisci alias provident
+                            blanditiis neque molestias aliquid aut quidem reprehenderit autem nobis iusto illo.</p>
+                    </div>
+                </div>
+                <div class="banner-item">
+                    <img src="https://picsum.photos/300/400/?image=3" alt="" class="w-100">
+                    <div class="banner-caption text-light">
+                        <h5 class="banner-title">Brand xxx</h5>
+                        <p class="banner-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo unde
+                            cupiditate doloribus architecto delectus recusandae, assumenda adipisci alias provident
+                            blanditiis neque molestias aliquid aut quidem reprehenderit autem nobis iusto illo.</p>
+                    </div>
+                </div>
             </div>
         </section>
-        <section id="sec2">
+        <!-- End Banner -->
+
+        <!-- About Us -->
+        <section id="about">
             <div class="container">
-                <h2>Section 2</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia deserunt iste aliquid a minima
-                    fugit ipsam! Magnam maxime dolorum corporis officiis, molestias quod unde quaerat, et eveniet ea sit
-                    suscipit.</p>
+                <div class="row no-gutters">
+                    <div class="col-lg-6">
+                        <div class="about-body">
+                            <h2 class="about-title">About Us</h2>
+                            <p class="about-text">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt repudiandae voluptate
+                                quidem itaque, omnis qui odit velit saepe magni pariatur. Officiis, debitis vero ipsam
+                                adipisci repudiandae delectus excepturi cum laudantium.Inventore quibusdam aperiam
+                                accusamus, quas voluptatem harum ratione delectus sunt voluptatum commodi maxime, magni
+                                laborum sequi! Repellat dolores rem, tenetur est cum optio laboriosam quaerat ut, vitae
+                                facere amet accusantium!
+                            </p>
+                            <p class="about-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia error asperiores odit
+                                illum! Eaque, suscipit, at reiciendis id culpa dolor blanditiis libero quod magni
+                                asperiores molestias soluta? Voluptatum, recusandae laudantium.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-lg-first">
+                        <img src="https://picsum.photos/300/400/?image=4" alt="" class="about-img">
+                    </div>
+                </div>
             </div>
         </section>
-        <section id="sec3">
+        <!-- End About Us -->
+
+        <!-- Labels 1 -->
+        <section id="labels-1">
             <div class="container">
                 <h2>Section 3</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia deserunt iste aliquid a minima
                     fugit ipsam! Magnam maxime dolorum corporis officiis, molestias quod unde quaerat, et eveniet ea sit
                     suscipit.</p>
-                <div class="slider">
-                    <div class="px-1 px-lg-2">
-                        <img src="https://picsum.photos/300/400/?image=0" alt="" class="w-100">
-                    </div>
-                    <div class="px-1 px-lg-2">
-                        <img src="https://picsum.photos/300/400/?image=0" alt="" class="w-100">
-                    </div>
-                    <div class="px-1 px-lg-2">
-                        <img src="https://picsum.photos/300/400/?image=0" alt="" class="w-100">
-                    </div>
-                    <div class="px-1 px-lg-2">
-                        <img src="https://picsum.photos/300/400/?image=0" alt="" class="w-100">
-                    </div>
-                    <div class="px-1 px-lg-2">
-                        <img src="https://picsum.photos/300/400/?image=0" alt="" class="w-100">
-                    </div>
-                    <div class="px-1 px-lg-2">
-                        <img src="https://picsum.photos/300/400/?image=0" alt="" class="w-100">
-                    </div>
+            </div>
+            <div class="slider">
+                <div class="px-1 px-lg-2">
+                    <img src="https://picsum.photos/300/400/?image=0" alt="" class="w-100">
+                </div>
+                <div class="px-1 px-lg-2">
+                    <img src="https://picsum.photos/300/400/?image=0" alt="" class="w-100">
+                </div>
+                <div class="px-1 px-lg-2">
+                    <img src="https://picsum.photos/300/400/?image=0" alt="" class="w-100">
+                </div>
+                <div class="px-1 px-lg-2">
+                    <img src="https://picsum.photos/300/400/?image=0" alt="" class="w-100">
+                </div>
+                <div class="px-1 px-lg-2">
+                    <img src="https://picsum.photos/300/400/?image=0" alt="" class="w-100">
+                </div>
+                <div class="px-1 px-lg-2">
+                    <img src="https://picsum.photos/300/400/?image=0" alt="" class="w-100">
                 </div>
             </div>
         </section>
-        <section id="sec4">
+        <!-- End Labels 2 -->
+
+        <!-- Labels 2 -->
+        <section id="labels-2">
             <div class="container">
                 <h2>Section 4</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia deserunt iste aliquid a minima
                     fugit ipsam! Magnam maxime dolorum corporis officiis, molestias quod unde quaerat, et eveniet ea sit
                     suscipit.</p>
-                    <div class="slider">
-                        <div class="px-1 px-lg-2">
-                            <img src="https://picsum.photos/300/400/?image=1" alt="" class="w-100">
-                        </div>
-                        <div class="px-1 px-lg-2">
-                            <img src="https://picsum.photos/300/400/?image=1" alt="" class="w-100">
-                        </div>
-                        <div class="px-1 px-lg-2">
-                            <img src="https://picsum.photos/300/400/?image=1" alt="" class="w-100">
-                        </div>
-                        <div class="px-1 px-lg-2">
-                            <img src="https://picsum.photos/300/400/?image=1" alt="" class="w-100">
-                        </div>
-                        <div class="px-1 px-lg-2">
-                            <img src="https://picsum.photos/300/400/?image=1" alt="" class="w-100">
-                        </div>
-                        <div class="px-1 px-lg-2">
-                            <img src="https://picsum.photos/300/400/?image=1" alt="" class="w-100">
-                        </div>
-                    </div>
+            </div>
+            <div class="slider">
+                <div class="px-1 px-lg-2">
+                    <img src="https://picsum.photos/300/400/?image=1" alt="" class="w-100">
+                </div>
+                <div class="px-1 px-lg-2">
+                    <img src="https://picsum.photos/300/400/?image=1" alt="" class="w-100">
+                </div>
+                <div class="px-1 px-lg-2">
+                    <img src="https://picsum.photos/300/400/?image=1" alt="" class="w-100">
+                </div>
+                <div class="px-1 px-lg-2">
+                    <img src="https://picsum.photos/300/400/?image=1" alt="" class="w-100">
+                </div>
+                <div class="px-1 px-lg-2">
+                    <img src="https://picsum.photos/300/400/?image=1" alt="" class="w-100">
+                </div>
+                <div class="px-1 px-lg-2">
+                    <img src="https://picsum.photos/300/400/?image=1" alt="" class="w-100">
+                </div>
             </div>
         </section>
-        <section id="sec5">
+        <!-- End Labels 2 -->
+
+        <!-- Labels 3 -->
+        <section id="labels-3">
             <div class="container">
                 <h2>Section 5</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia deserunt iste aliquid a minima
                     fugit ipsam! Magnam maxime dolorum corporis officiis, molestias quod unde quaerat, et eveniet ea sit
                     suscipit.</p>
-                    <div class="slider">
-                        <div class="px-1 px-lg-2">
-                            <img src="https://picsum.photos/300/400/?image=2" alt="" class="w-100">
+            </div>
+            <div class="slider">
+                <div class="px-1 px-lg-2">
+                    <img src="https://picsum.photos/300/400/?image=2" alt="" class="w-100">
+                </div>
+                <div class="px-1 px-lg-2">
+                    <img src="https://picsum.photos/300/400/?image=2" alt="" class="w-100">
+                </div>
+                <div class="px-1 px-lg-2">
+                    <img src="https://picsum.photos/300/400/?image=2" alt="" class="w-100">
+                </div>
+                <div class="px-1 px-lg-2">
+                    <img src="https://picsum.photos/300/400/?image=2" alt="" class="w-100">
+                </div>
+                <div class="px-1 px-lg-2">
+                    <img src="https://picsum.photos/300/400/?image=2" alt="" class="w-100">
+                </div>
+                <div class="px-1 px-lg-2">
+                    <img src="https://picsum.photos/300/400/?image=2" alt="" class="w-100">
+                </div>
+            </div>
+        </section>
+        <!-- End Labels 3 -->
+
+        <!-- Join Our Newsletter -->
+        <section id="join" style="background-image: url('https://picsum.photos/1920/400/?image=5');">
+            <div class="container">
+                <div class="join">
+                    <h2 class="text-center">Join Our Newsletter</h2>
+                    <form action="" class="join-form">
+                        <div class="form-group">
+                            <label for="">Email address</label>
+                            <input type="email" class="form-control" placeholder="Enter email address">
                         </div>
-                        <div class="px-1 px-lg-2">
-                            <img src="https://picsum.photos/300/400/?image=2" alt="" class="w-100">
+                        <div class="form-group">
+                            <label for="">First name</label>
+                            <input type="text" class="form-control" placeholder="First name">
                         </div>
-                        <div class="px-1 px-lg-2">
-                            <img src="https://picsum.photos/300/400/?image=2" alt="" class="w-100">
+                        <div class="form-group">
+                            <label for="">Last name</label>
+                            <input type="text" class="form-control" placeholder="Last name">
                         </div>
-                        <div class="px-1 px-lg-2">
-                            <img src="https://picsum.photos/300/400/?image=2" alt="" class="w-100">
+                        <div class="form-group">
+                            <label for="">Mobile number</label>
+                            <input type="tel" class="form-control" placeholder="Mobile number">
                         </div>
-                        <div class="px-1 px-lg-2">
-                            <img src="https://picsum.photos/300/400/?image=2" alt="" class="w-100">
+                        <div class="form-group">
+                            <label for="">Birthday</label>
+                            <div class="input-group">
+                                <input type="number" class="form-control" placeholder="MM" maxlength="2" min="01" max="12">
+                                <div class="input-group-prepend input-group-append">
+                                    <span class="input-group-text">/</span>
+                                </div>
+                                <input type="number" class="form-control" placeholder="DD" maxlength="2" min="01" max="31">
+                            </div>
                         </div>
-                        <div class="px-1 px-lg-2">
-                            <img src="https://picsum.photos/300/400/?image=2" alt="" class="w-100">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- End Join Our Newsletter -->
+
+        <!-- Contact Us -->
+        <section id="contact">
+            <div class="contact-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3269.0574938095374!2d138.51583761589168!3d-34.98022458502484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ab0cee5c6319725%3A0x5c3d6a4e973bbcaa!2sVertice%20Boutique!5e0!3m2!1sen!2sth!4v1590559655386!5m2!1sen!2sth"
+                    width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="contact-body">
+                            <h2>Contact Us</h2>
+                            <h5>Vertice Boutique</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia deserunt iste aliquid a
+                                minima
+                                fugit ipsam! Magnam maxime dolorum corporis officiis, molestias quod unde quaerat, et
+                                eveniet ea sit
+                                suscipit.</p>
                         </div>
                     </div>
+                </div>
             </div>
         </section>
-        <section id="sec6">
-            <div class="container">
-                <h2>Section 6</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia deserunt iste aliquid a minima
-                    fugit ipsam! Magnam maxime dolorum corporis officiis, molestias quod unde quaerat, et eveniet ea sit
-                    suscipit.</p>
-            </div>
-        </section>
+        <!-- End Contact Us -->
+
     </main>
-    <footer class="bg-light">
-        <div class="container">
-            Footer
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center text-lg-left small">
+            Copyright © 1999 Vertice Boutique All Rights Reserved.
         </div>
     </footer>
+    <!-- End Footer -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.0/smooth-scroll.polyfills.min.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>
 

@@ -1,57 +1,54 @@
 $(function () {
-      // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 1000, function(){
-
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
+  var scroll = new SmoothScroll('a[href*="#"]');
 
   $('body').scrollspy({ target: '#navbarSupportedContent' });
 
-//   Slider
-  $(".slider").slick({
-      autoplay: true,
-    slidesToShow: 4,
-    centerMode: true,
-  
+  // Banner
+  $(".banner").slick({
+    autoplay: false,
+    slidesToShow: 2,
+    pauseOnFocus: false,
+    pauseOnHover: false,
+    slidesToScroll: 2,
+
     // the magic
     responsive: [{
-  
-        breakpoint: 1024,
+        breakpoint: 576,
         settings: {
-          slidesToShow: 3,
-          infinite: true
+          slidesToShow: 1,
+          slidesToScroll: 1,
         }
-  
-      }, {
-  
-        breakpoint: 600,
+    }]
+  });
+
+  // Slider
+  $(".slider").slick({
+      autoplay: false,
+      slidesToShow: 4,
+      centerMode: true,
+      pauseOnFocus: false,
+      pauseOnHover: false,
+    
+      // the magic
+      responsive: [{
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 3,
+          }
+      },
+      {
+        breakpoint: 768,
         settings: {
           slidesToShow: 2,
-          dots: true
+          arrows: false,
         }
-  
-      }, {
-  
-        breakpoint: 300,
-        settings: "unslick" // destroys slick
-  
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+        }
       }]
-  });
+    });
 });
