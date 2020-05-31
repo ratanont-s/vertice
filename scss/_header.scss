@@ -1,2 +1,64 @@
-header{
+header {
+    .navbar-light {
+        .navbar {
+
+            &-toggler {
+                border-width: 0;
+            }
+        }
+    }
+
+    .nav {
+
+
+        &-link {
+            position: relative;
+            text-align: center;
+
+            &::before {
+                opacity: 0;
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                width: 40px;
+                border-bottom: 3px solid;
+            }
+
+            &.active {
+                font-weight: 600;
+
+                &::before {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        .nav {
+            &-item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        .navbar {
+            >.container {
+                justify-content: center;
+                position: relative;
+            }
+
+            &-toggler {
+                position: absolute;
+                top: 10px;
+                right: 0;
+            }
+        }
+    }
 }
