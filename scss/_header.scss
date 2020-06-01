@@ -1,5 +1,8 @@
 header {
     .navbar-light {
+        padding-top: 0;
+        padding-bottom: 0;
+
         .navbar {
 
             &-toggler {
@@ -9,8 +12,6 @@ header {
     }
 
     .nav {
-
-
         &-link {
             position: relative;
             text-align: center;
@@ -34,6 +35,12 @@ header {
                     opacity: 1;
                 }
             }
+        }
+    }
+
+    .dropdown {
+        &-item {
+            text-align: center;
         }
     }
 
