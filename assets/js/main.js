@@ -33,10 +33,8 @@ $(function () {
   $("#labelsSlide1").slick({
     autoplay: false,
     slidesToShow: 4,
-    centerMode: true,
     pauseOnFocus: false,
     pauseOnHover: false,
-    centerPadding: '120px',
     dots: true,
     appendDots: $('#labelsDots1'),
 
@@ -45,7 +43,6 @@ $(function () {
         breakpoint: 992,
         settings: {
           slidesToShow: 3,
-          centerPadding: '50px',
         }
       },
       {
@@ -53,7 +50,6 @@ $(function () {
         settings: {
           slidesToShow: 2,
           arrows: false,
-          centerPadding: '50px',
         }
       },
       {
@@ -61,7 +57,6 @@ $(function () {
         settings: {
           slidesToShow: 1,
           arrows: false,
-          centerPadding: '50px',
         }
       }
     ]
@@ -69,10 +64,8 @@ $(function () {
   $("#labelsSlide2").slick({
     autoplay: false,
     slidesToShow: 4,
-    centerMode: true,
     pauseOnFocus: false,
     pauseOnHover: false,
-    centerPadding: '120px',
     dots: true,
     appendDots: $('#labelsDots2'),
 
@@ -81,7 +74,6 @@ $(function () {
         breakpoint: 992,
         settings: {
           slidesToShow: 3,
-          centerPadding: '50px',
         }
       },
       {
@@ -89,7 +81,6 @@ $(function () {
         settings: {
           slidesToShow: 2,
           arrows: false,
-          centerPadding: '50px',
         }
       },
       {
@@ -97,7 +88,6 @@ $(function () {
         settings: {
           slidesToShow: 1,
           arrows: false,
-          centerPadding: '50px',
         }
       }
     ]
@@ -105,10 +95,8 @@ $(function () {
   $("#labelsSlide3").slick({
     autoplay: false,
     slidesToShow: 4,
-    centerMode: true,
     pauseOnFocus: false,
     pauseOnHover: false,
-    centerPadding: '120px',
     dots: true,
     appendDots: $('#labelsDots3'),
 
@@ -117,7 +105,6 @@ $(function () {
         breakpoint: 992,
         settings: {
           slidesToShow: 3,
-          centerPadding: '50px',
         }
       },
       {
@@ -125,7 +112,6 @@ $(function () {
         settings: {
           slidesToShow: 2,
           arrows: false,
-          centerPadding: '50px',
         }
       },
       {
@@ -133,7 +119,6 @@ $(function () {
         settings: {
           slidesToShow: 1,
           arrows: false,
-          centerPadding: '50px',
         }
       }
     ]

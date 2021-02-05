@@ -93,6 +93,51 @@
     }
   }
 
+  #bannerSecondary {
+    padding: 4rem 0 2rem;
+
+    .card {
+      border-width: 0;
+      border-radius: 0;
+      background-color: $black;
+
+      &:hover {
+        .card-img {
+          img {
+            transform: scale(1);
+            @include transition($transition-base);
+          }
+        }
+      }
+
+      &-img {
+        border-radius: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+
+        img {
+          width: 100%;
+          vertical-align: middle;
+          transform: scale(1.1);
+          opacity: 0.75;
+          @include transition($transition-base);
+        }
+
+        &-overlay {
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          color: $white;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
   #about {
     text-align: center;
 
@@ -280,7 +325,6 @@
 
         &-prev {
           left: 0;
-          @include gradient-x($start-color: rgba($primary, 0.5), $end-color: rgba($primary, 0), $start-percent: 0%, $end-percent: 100%);
 
           &::before {
             content: '';
@@ -290,7 +334,6 @@
 
         &-next {
           right: 0;
-          @include gradient-x($start-color: rgba($primary, 0), $end-color: rgba($primary, 0.5), $start-percent: 0%, $end-percent: 100%);
 
           &::before {
             content: '';
