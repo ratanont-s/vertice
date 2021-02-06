@@ -133,6 +133,40 @@
           align-items: center;
           color: $white;
           text-transform: uppercase;
+
+          p {
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      &-title {
+        &-1 {
+          letter-spacing: 4px;
+          font-weight: lighter;
+        }
+
+        &-4 {
+          border: 3px solid $white;
+          letter-spacing: 4px;
+          font-weight: bold;
+          margin-top: 10px;
+          margin-bottom: 10px !important;
+
+          span {
+            padding: .5rem 1rem;
+            display: inline-block;
+          }
+        }
+
+        &-5 {
+          font-size: .75em;
+          letter-spacing: 6px;
+        }
+
+        &-6 {
+          font-weight: bold;
+          font-size: 1.25em;
         }
       }
     }
