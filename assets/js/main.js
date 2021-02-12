@@ -123,4 +123,35 @@ $(function () {
       }
     ]
   });
+  $("#labelsSlide4").slick({
+    autoplay: false,
+    slidesToShow: 4,
+    pauseOnFocus: false,
+    pauseOnHover: false,
+    dots: true,
+    appendDots: $('#labelsDots4'),
+
+    // the magic
+    responsive: [{
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+        }
+      }
+    ]
+  });
 });

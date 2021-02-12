@@ -249,13 +249,8 @@
     }
   }
 
-  #labels {
+  .sec-labels {
     padding-top: 70px;
-
-    &-1,
-    &-2,
-    &-3 {
-      padding-top: 70px;
       text-align: center;
 
       .labels {
@@ -375,7 +370,6 @@
           }
         }
       }
-    }
   }
 
   #allBrand {
